@@ -1,0 +1,41 @@
+﻿<Window x:Class="Aplikacja.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplikacja"
+        mc:Ignorable="d"
+        Title="BookWeb" Height="300" Width="300" MinHeight="300" MinWidth="300" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="BookWeb" FontSize="36"/>
+
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Content="Register" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="1" Content="Login: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="2" Content="Password: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="3" Content="Email: " HorizontalAlignment="Center"/>
+            <TextBox Grid.Column="1" Grid.Row="1"  Height="23" TextWrapping="Wrap" Width="120" Name="Tb1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Grid.Column="1" Grid.Row="3"  Height="23" TextWrapping="Wrap" Width="120" Name="Tb3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Grid.Column="0" Grid.Row="4" Content="Exit to Menu" Width="75" Name="Btn1" Click="Btn1_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Grid.Column="1" Grid.Row="4" Content="Register" Width="75" Name="Btn2" Click="Btn2_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <PasswordBox Grid.Column="1" Grid.Row="2" Width="120" Name="Pb1" Height="23" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Grid>
+           
+    </Grid>
+</Window>
